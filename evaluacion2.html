@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Información</title>
+</head>
+<body>
+    <h1>Formulario de Información</h1>
+    <form action="procesar_formulario.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <label for="tipo_informacion">Tipo de Información:</label>
+        <select id="tipo_informacion" name="tipo_informacion">
+            <option value="hospedaje">Hospedaje</option>
+            <option value="reservacion_vuelo">Reservación de Vuelo</option>
+            <option value="reservacion_hotel">Reservación de Hotel</option>
+            <option value="sugerencia_lugares">Sugerencia de Lugares a Visitar</option>
+        </select><br><br>
+
+        
+    <button type="submit">Enviar</button>
+    <button type="reset">Borrar</button>
+    </form>
+
+   
+</body>
+</html>
